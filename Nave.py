@@ -55,11 +55,11 @@ class Nave():
     def membersAlive(self):
 
         membersAlive=0
-        # I AM LAUNCHING AN IMPOSSIBLE EXCEPTION, SINCE IT CANT BE ANY NAVEWITH OTHER TYPE THAN MARCIANO OR TERRICOLA
+        # I AM LAUNCHING AN IMPOSSIBLE EXCEPTION, SINCE IT CANT BE ANY NAVE WITH OTHER TYPE THAN MARCIANO OR TERRICOLA
         # Read Constructor to double check it. That is why the exception is not documented
         if(self.__type == Marciano or self.__type ==Terricola):
             for warrior in self.__crew:
-                #We access the member of the grandparent class (SerVivo), that is shared by all warriors (Marciano and Terricola)! 
+                #We access the member of the grandparent class (SerVivo), that is shared by all warriors (Marciano and Terricola)!
                 if(warrior.is_vivo()):
                     membersAlive+=1
         else:

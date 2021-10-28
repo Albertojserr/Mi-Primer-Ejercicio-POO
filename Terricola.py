@@ -15,10 +15,8 @@ class Terricola(Guerrero):
     # Overrides the method shoot from the parent class!
     def shoot(self):
         '''
-        Shoot if the Terricola is alive generating a random number between
-0 and the __max_target
-        It shoots a number of times equals to the number of shoots that a
-Marciano can hold
+        Shoot if the Terricola is alive generating a random number between0 and the __max_target
+        It shoots a number of times equals to the number of shoots that aMarciano can hold
         :returns the number to shoot if the warrior is alive, -1 otherwise
         '''
         if(self._vivo):
@@ -37,8 +35,7 @@ Marciano can hold
         '''
         If the target is guessed by the shoot, then the warrior dies.
         :param shoot: int with the shoot against the soldier
-        :returns True if the shot kills the warrior (shot is the target and
-the warrior is alive), False otherwise
+        :returns True if the shot kills the warrior (shot is the target and the warrior is alive), False otherwise
         '''
         isTarget = Guerrero.get_shot(self,shot)
         if(self._vivo):

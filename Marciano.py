@@ -14,11 +14,9 @@ def get_shotsToReceive(self):
 # Overrides the method get_shot from the parent class!
 def get_shot(self, shot):
         '''
-        If the target is guessed by the shoot, then the warrior
-dies.
+        If the target is guessed by the shoot, then the warrior dies.
         :param shoot: int with the shoot against the soldier
-        :returns True if the shot kills the warrior (shot is the
-target and the warrior is alive), False otherwise
+        :returns True if the shot kills the warrior (shot is the target and the warrior is alive), False otherwise
         '''
         isTarget = False
         if(self._vivo == True and self._target == shot):

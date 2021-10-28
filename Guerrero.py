@@ -23,8 +23,7 @@ class Guerrero(SerVivo):
 
     def shoot(self):
         '''
-        Shoot if the warrior is alive generating a randome number between 0
-and the ____max_target
+        Shoot if the warrior is alive generating a randome number between 0 and the ____max_target
         :returns the number to shoot if the warrior is alive, -1 otherwise
         '''
         if(self._vivo):
@@ -39,8 +38,7 @@ and the ____max_target
         '''
         If the target is guessed by the shoot, then the warrior dies.
         :param shoot: int with the shoot against the soldier
-        :returns True if the shot kills the warrior (shot is the target and
-the warrior is alive), False otherwise
+        :returns True if the shot kills the warrior (shot is the target and the warrior is alive), False otherwise
         '''
         isTarget = False
         if(self._vivo == True and self._target == shot):
@@ -58,8 +56,7 @@ the warrior is alive), False otherwise
     ''' TODO IF NEEDED OVERRIDE METHODS EQUALITY, COMPARISON, HASH , etc.
     '''
     def __str__(self):
-        '''Override method toString to identify the objects and know their
-states
+        '''Override method toString to identify the objects and know their states
         '''
         return self._name
 
