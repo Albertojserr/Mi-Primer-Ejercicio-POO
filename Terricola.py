@@ -1,5 +1,7 @@
 from Guerrero import Guerrero
 from Marciano import Marciano
+from Utilities import Utilities
+
 
 class Terricola(Guerrero):
 
@@ -20,9 +22,9 @@ Marciano can hold
         :returns the number to shoot if the warrior is alive, -1 otherwise
         '''
         if(self._vivo):
-            shot = generaIntAleatorio(0,Guerrero.get_maxTarget())
+            shot = Utilities.generaIntAleatorio(0,Guerrero.get_maxTarget())
             while(Terricola.__shots_done[shot] >= Marciano.get_shotsToKillAMarciano()):
-                shot = generaIntAleatorio(0,Guerrero.get_maxTarget())
+                shot = Utilities.generaIntAleatorio(0,Guerrero.get_maxTarget())
             Terricola.__shots_done[shot] += 1
             print(self._name + " shoot " + str(shot) + " for " + str(Terricola.__shots_done[shot]) + " time")
 
